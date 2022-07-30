@@ -6,7 +6,7 @@
 - install tfenv
 #### apply
 - edit s3 bucket, region in "**terraform/backend.tf**".
-- edit ecr image in "**terraform/ecs-task.tf".
+- edit ecr image in "**terraform/ecs-task.tf**".
 - apply
   - `cd terraform`
   - `terraform init`
