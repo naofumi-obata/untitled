@@ -33,8 +33,8 @@ resource "aws_security_group_rule" "untitled-security-roule-ingress" {
   security_group_id = aws_security_group.untitled-security-group.id
 
   type        = "ingress"
-  from_port   = 8080
-  to_port     = 8080
+  from_port   = var.mapping_port
+  to_port     = var.mapping_port
   protocol    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 }

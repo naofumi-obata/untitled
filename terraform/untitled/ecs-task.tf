@@ -14,7 +14,7 @@ resource "aws_ecs_task_definition" "untitled" {
 [
   {
     "name": "untitled",
-    "image": "public.ecr.aws/y6z2k0q4/untitled:latest",
+    "image": "${var.docker_image_url}",
     "essential": true
   }
 ]

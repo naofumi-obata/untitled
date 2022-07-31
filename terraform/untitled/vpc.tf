@@ -1,7 +1,7 @@
 resource "aws_vpc" "untitled" {
   cidr_block = "172.16.0.0/16"
   tags = {
-    Name = "untitled-vpc"
+    Name = "untitled"
   }
 }
 
@@ -10,7 +10,6 @@ resource "aws_subnet" "untitled-1a" {
   cidr_block        = "172.16.1.0/24"
   availability_zone = "ap-northeast-1a"
 }
-
 
 resource "aws_internet_gateway" "untitled-gw" {
   vpc_id = aws_vpc.untitled.id
